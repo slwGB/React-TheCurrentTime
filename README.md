@@ -41,7 +41,7 @@ Project
   |    |              4.通过subscribe(listener)注册监听器；
   |    |              5.通过subscribe(listener)返回的函数注销监听器。
   |    |
-  |	   |-- components => 展示型组件目录
+  |    |-- components => 展示型组件目录
   |    |
   |    |-- containers => 容器型组件目录
   |    |
