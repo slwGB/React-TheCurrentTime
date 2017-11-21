@@ -1,9 +1,9 @@
+```` bash
 |-----------------------------------------|
-|										  |
+|										  | 
 |      Document For ECMAScript6           |
 |										  |
 |-----------------------------------------|
-
 
 Project
   |
@@ -28,17 +28,17 @@ Project
   |-- src
   |	   |
   |	   |-- actions => Action是把数据从应用传到 store 的有效载荷。
-  |	   | 			  它是 store 数据的唯一来源，一般通过
+  |	   | 			        它是 store 数据的唯一来源，一般通过
   |	   |              store.dispatch() 将 action 传到 store。
   |	   |
   |	   |-- reducers => Action只是描述了有事情发生了这一事实，
-  |	   |			   并没有指明应用如何更新 state。
+  |	   |			         并没有指明应用如何更新 state。
   |    |               reducer 用来做更新state这个动作。
   |	   |
   |	   |-- store  =>  1.维持应用的state；
   |    |			  2.提供getState()方法获取 state；
   |	   |			  3.提供dispatch(action)方法更新state；
-  |	   |		      4.通过subscribe(listener)注册监听器；
+  |	   |		    4.通过subscribe(listener)注册监听器；
   |	   |			  5.通过subscribe(listener)返回的函数注销监听器。
   |	   |
   |	   |-- components => 组件目录
@@ -75,4 +75,4 @@ Project
   |				   只不过yarn可以做到手动更改package.json后，
   |                重新安装并更新lockfile。 
      
-
+````
