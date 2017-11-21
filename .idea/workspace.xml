@@ -4,7 +4,6 @@
     <list default="true" id="b75243fe-dd74-4057-a513-2d8d2f598a5e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack/server.js" afterPath="$PROJECT_DIR$/webpack/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +18,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webpack/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
@@ -28,6 +27,16 @@
                 <element signature="e#458#505#0" expanded="true" />
                 <element signature="e#543#696#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="74" column="19" lean-forward="false" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -274,12 +283,12 @@
       <workItem from="1510904564425" duration="6307000" />
       <workItem from="1510913375772" duration="467000" />
       <workItem from="1511140149845" duration="3645000" />
-      <workItem from="1511231751443" duration="149000" />
+      <workItem from="1511231751443" duration="418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31544000" />
+    <option name="totallyTimeSpent" value="31813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1876" y="23" width="1876" height="1057" extended-state="6" />
@@ -562,14 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -578,6 +579,14 @@
             <element signature="e#458#505#0" expanded="true" />
             <element signature="e#543#696#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="74" column="19" lean-forward="false" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
