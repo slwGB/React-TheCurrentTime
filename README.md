@@ -26,21 +26,21 @@ Project
   |-- dist => 打包输出文件目录
   |
   |-- src
-  |	   |
-  |	   |-- actions => Action是把数据从应用传到 store 的有效载荷。
-  |	   | 			  它是 store 数据的唯一来源，一般通过
-  |	   |              store.dispatch() 将 action 传到 store。
-  |	   |
-  |	   |-- reducers => Action只是描述了有事情发生了这一事实，
-  |	   |			   并没有指明应用如何更新 state。
+  |    |
+  |    |-- actions => Action是把数据从应用传到 store 的有效载荷。
+  |    | 			        它是 store 数据的唯一来源，一般通过
+  |    |              store.dispatch() 将 action 传到 store。
+  |    |
+  |    |-- reducers => Action只是描述了有事情发生了这一事实，
+  |    |			         并没有指明应用如何更新 state。
   |    |               reducer 用来做更新state这个动作。
-  |	   |
-  |	   |-- store  =>  1.维持应用的state；
-  |    |			  2.提供getState()方法获取 state；
-  |	   |			  3.提供dispatch(action)方法更新state；
-  |	   |		      4.通过subscribe(listener)注册监听器；
-  |	   |			  5.通过subscribe(listener)返回的函数注销监听器。
-  |	   |
+  |    |
+  |    |-- store  =>  1.维持应用的state；
+  |    |			        2.提供getState()方法获取 state；
+  |    |			        3.提供dispatch(action)方法更新state；
+  |    |		          4.通过subscribe(listener)注册监听器；
+  |    |			        5.通过subscribe(listener)返回的函数注销监听器。
+  |    |
   |	   |-- components => 组件目录
   |	   |
   |	   |-- asset => 静态文件目录
@@ -62,17 +62,17 @@ Project
   |-- package.json => 定义了这个项目所需要的各种模块，以及项目的配置信息。
   |
   |-- package-lock.json => npm5.0后新增。记录了整个 node_modules 
-  |						   文件夹的树状结构,当重新安装模块的时候，
-  |						   速度加快。但是，生成pack-lock.json后，
+  |						             文件夹的树状结构,当重新安装模块的时候，
+  |						             速度加快。但是，生成pack-lock.json后，
   |                        重复执行npm install时将会以其记录的版本来安装。
-  |						   这时如果手动修改 package.json 中的版本，
-  |						   重新安装也不会生效，只能手动执行npm install
+  |						             这时如果手动修改 package.json 中的版本，
+  |						             重新安装也不会生效，只能手动执行npm install
   |                        命令指定依赖版本来进行修改。
   |
   |
   |-- yarn.lock => yarn.lcok文件是自动产生的，
   |                和package-lock.json的功能一样，
-  |				   只不过yarn可以做到手动更改package.json后，
+  |				         只不过yarn可以做到手动更改package.json后，
   |                重新安装并更新lockfile。 
      
 ````
