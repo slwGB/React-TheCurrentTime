@@ -72,7 +72,7 @@ Project
   |
   |-- yarn.lock => yarn.lcok文件是自动产生的，
   |                和package-lock.json的功能一样，
-                   只不过yarn可以做到手动更改package.json后，
+  |                只不过yarn可以做到手动更改package.json后，
   |                重新安装并更新lockfile。 
      
 ````
