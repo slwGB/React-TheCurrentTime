@@ -43,10 +43,10 @@ Project
   |    |               reducer 用来做更新state这个动作。
   |    |
   |    |-- store  =>  1.维持应用的state；
-  |    |              2.提供getState()方法获取 state；
-  |    |              3.提供dispatch(action)方法更新state；
-  |    |              4.通过subscribe(listener)注册监听器；
-  |    |              5.通过subscribe(listener)返回的函数注销监听器。
+  |    |              2.提供 getState() 方法获取 state；
+  |    |              3.提供 dispatch(action) 方法更新state；
+  |    |              4.通过 subscribe(listener) 注册监听器；
+  |    |              5.通过 subscribe(listener) 返回的函数注销监听器。
   |    |
   |    |-- components => 展示型组件目录
   |    |
