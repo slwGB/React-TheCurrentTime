@@ -11,11 +11,18 @@ Project
   |       |
   |       |-- react
   |       |
+  |       |-- react-dom
+  |       |
   |       |-- react-router
   |       |
-  |       |-- react-redux
+  |       |-- react-redux => redux本身只能处理同步的Action
   |       |
-  |       |-- react-dom
+  |       |-- react-thunk => 在我们没有加上thunk这个中间件之前，
+  |       |                  store的dispatch方法只能传入一个action对象，
+  |       |                  thunk的作用就是能够让我们可以将一个function方法传入diptach，
+  |       |                  这在做异步的时候非常有用。
+  |       |
+  |       |-- redux-promise => redux-promise支持将promise对象作为参数传入dispatch中。
   |       |
   |       |-- webpack
   |       |
