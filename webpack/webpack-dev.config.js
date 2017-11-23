@@ -1,6 +1,6 @@
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+let path = require('path')
+let webpack = require('webpack')
+let HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     devtool: 'cheap-source-map',
@@ -24,18 +24,23 @@ module.exports = {
     module: {
         loaders: [
             {
+                exclude: /node_modules/
+            },
+            {
                 test: /\.(jsx|js|es6)$/,
-                loader: "babel-loader",
+                loader: 'babel-loader',
                 include: /src/,
                 query: {
                     presets: ['react']
                 }
-            }, {
+            },
+            {
                 test: /\.styl$/,
                 loader: 'style-loader!css-loader!stylus-loader'
-            }, {
+            },
+            {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loader: "url",
+                loader: 'url',
                 query: {
                     limit: 1000,
                     name: 'images/[name].[ext]'

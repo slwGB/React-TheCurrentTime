@@ -13,6 +13,9 @@ var configuration = {
     module: {
         loaders: [
             {
+                exclude: /node_modules/
+            },
+            {
                 test: /\.(jsx|js|es6)$/,
                 loader: "babel-loader",
                 include: /src/,

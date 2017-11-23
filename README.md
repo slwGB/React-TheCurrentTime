@@ -52,7 +52,7 @@ Project
   |    |
   |    |-- containers => 容器型组件目录
   |    |
-  |    |-- asset => 静态文件目录
+  |    |-- static => 静态文件目录
   |    |
   |    |-- main.js => 入口文件
   |
