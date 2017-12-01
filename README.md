@@ -1,3 +1,10 @@
+````bash
+
+#### A simple and clear React & Redux Project. 
+#### You can use it to reduce your initialize a react project work.
+
+````
+
 ```` bash 
 |-----------------------------------------|
 |                                         | 
