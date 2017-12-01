@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
+import timeFormat from '../library/timeFormat'
 
 export default class LocalTime extends Component {
     constructor (props) {
@@ -10,7 +11,7 @@ export default class LocalTime extends Component {
         const {localTime} = this.props
         return (
             <div>
-                <h1>localtime {localTime}</h1>
+                <h1>{timeFormat(localTime,'yyyy年MM月dd日 hh:mm:ss')}</h1>
             </div>
         )
     }

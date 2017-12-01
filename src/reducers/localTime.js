@@ -1,5 +1,5 @@
 export default (state = {
-    localTime: null
+    localTime: new Date().toLocaleString('chinese', {hour12: false})
 }, action) => {
     switch (action.type) {
         case 'LOCAL_TIME':
