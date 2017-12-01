@@ -1,11 +1,11 @@
 ```` bash 
 |-----------------------------------------|
 |                                         | 
-|      Document For ECMAScript6           |
+|            The Current Time             |
 |                                         | 
 |-----------------------------------------|
 
-Project
+TheCurrentTime
   |
   |-- node_modules 
   |       |
@@ -23,6 +23,13 @@ Project
   |       |                  这在做异步的时候非常有用。
   |       |
   |       |-- redux-promise => redux-promise支持将promise对象作为参数传入dispatch中。
+  |       |
+  |       |-- prop-types => React.PropTypes 自 React v15.5 起已弃用。
+  |       |                 请使用 prop-types 库代替。调用方法：
+  |       |                 import PropTypes from 'prop-types'
+  |       |
+  |       |-- @types/react => implements method in React.Component,解决
+  |       |                   Cannot resolve symbol 'Component' 的问题
   |       |
   |       |-- webpack
   |       |

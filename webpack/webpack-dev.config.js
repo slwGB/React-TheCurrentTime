@@ -3,7 +3,7 @@ let webpack = require('webpack')
 let HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    devtool: 'cheap-source-map',
+    devtool: 'source-map',
     entry: [
         'webpack-hot-middleware/client',
         './src/main.js'
