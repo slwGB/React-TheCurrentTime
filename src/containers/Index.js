@@ -4,8 +4,8 @@ import {connect} from 'react-redux'
 import {store} from '../main'
 import {bindActionCreators} from 'redux'
 import {getLocalTime} from '../actions/localTime'
-
 import LocalTime from '../components/LocalTime'
+import '../static/css/Index.css'
 
 class Index extends Component {
     /**
@@ -19,18 +19,18 @@ class Index extends Component {
         this.realTime = this.realTime.bind(this)
     }
 
-    realTime(){
+    realTime () {
         setInterval(() => {
             store.dispatch(getLocalTime())
         }, 1000)
     }
 
-
     /**
      *  componentWillMount()会在组件render之前立即被调用，并且永远都只执行一次。
      *  由于这个方法始终只执行一次，所以如果在这里定义了setState方法之后，页面永远都只会在加载前更新一次。
      */
-    componentWillMount () {}
+    componentWillMount () {
+    }
 
     /**
      *  componentDidMount()在组件被装载后立即被调用。
@@ -38,14 +38,15 @@ class Index extends Component {
      *  可以在这个方法中执行setTimeout, setInterval，接口调用等。
      */
     componentDidMount () {
-       this.realTime()
+        this.realTime()
     }
 
     /**
      *  componentWillReceiveProps()在组件接收到一个新的prop时被执行。
      *  这个方法在初始化render时不会被调用。
      */
-    componentWillReceiveProps () {}
+    componentWillReceiveProps () {
+    }
 
     /**
      *  返回一个布尔值。在组件接收到新的props或者state时被执行。
@@ -80,7 +81,9 @@ class Index extends Component {
     render () {
         const {localTime} = this.props
         return (
-            <LocalTime localTime={localTime} getLocalTime={getLocalTime}></LocalTime>
+            <div className='main'>
+                <LocalTime localTime={localTime} getLocalTime={getLocalTime}></LocalTime>
+            </div>
         )
     }
 }
@@ -107,4 +110,3 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
 // 通过react-redux提供的connect方法将我们需要的state中的数据和actions中的方法绑定到props上
 export default connect(mapStateToProps, mapDispatchToProps)(Index)
-

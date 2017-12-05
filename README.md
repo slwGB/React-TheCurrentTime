@@ -34,6 +34,52 @@ TheCurrentTime
   |       |-- @types/react => implements method in React.Component,解决
   |       |                   Cannot resolve symbol 'Component' 的问题
   |       |
+  |       |-- postcss-loader => PostCSS，一款通过 JS 插件转换 styles 样式的工具。
+  |       |                     根目录下新建postcss.config.js文件。配置如下：
+  |       |                     module.exports = {
+  |       |                         parser: 'sugarss',
+  |       |                         plugins: {
+  |       |                            'postcss-import': {},
+  |       |                            'postcss-cssnext': {},
+  |       |                            'cssnano': {}
+  |       |                         }
+  |       |                     }
+  |       |                     webpack配置：{
+  |       |                                   test: /\.css$/,
+  |       |                                   use: ['style-loader', 'css-loader','postcss-loader']
+  |       |                                 }
+  |       |
+  |       |-- Autoprefixer => PostCSS插件，一个后处理程序。解析CSS并添加浏览器前缀。
+  |       |                     postcss.config.js文件中配置如下：
+  |       |                     module.exports = {
+  |       |                         plugins: [
+  |       |                            require('autoprefixer')({})
+  |       |                         ]
+  |       |                     }
+  |       |
+  |       |-- extract-text-webpack-plugin => 将css单独打包成一个文件。
+  |       |                                  它会将所有的入口 chunk(entry chunks)中引用的 *.css，
+  |       |                                  移动到独立分离的 CSS 文件。因此，你的样式将不再内嵌到JS bundle中，
+  |       |                                  而是会放到一个单独的 CSS 文件（即 styles.css）当中。 
+  |       |                                  如果你的样式文件大小较大，这会做更快提前加载，因为 CSS bundle 
+  |       |                                  会跟 JS bundle 并行加载。
+  |       |
+  |       |-- optimize-css-assets-webpack-plugin => 压缩抽离后的css代码,
+  |       |                                         plugins: [new OptimizeCssAssetsPlugin()]
+  |       |
+  |       |-- html-webpack-plugin => 该插件将为您生成一个HTML5文件，
+  |       |                          其中包括使用script标签的body中的所有webpack包。
+  |       |
+  |       |-- copy-webpack-plugin => 在webpack中拷贝文件和文件夹。例如：
+  |       |                          new CopyWebpackPlugin([
+  |       |                           {from: "./src/static/images", to: 'images/'}
+  |       |                          ])
+  |       |                          作用就是将 ./src/static/images 
+  |       |                          目录下的图片拷到编译目录到 images 文件夹下面
+  |       |
+  |       |-- rimraf => 编译前清空dist目录。package.json配置：
+  |       |             "scripts": {"build": "rimraf dist && ..."}
+  |       |
   |       |-- webpack
   |       |
   |       |-- webpack-dev-middleware
