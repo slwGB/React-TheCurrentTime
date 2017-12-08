@@ -4,7 +4,7 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin')// 分离CSS
 let OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')// 压缩分离后的CSS
 let HtmlWebpackPlugin = require('html-webpack-plugin')
 let CopyWebpackPlugin = require('copy-webpack-plugin')
-let configuration = {
+module.exports  = {
     entry: {
         app: [
             './src/main.js'
@@ -69,4 +69,3 @@ let configuration = {
         ])
     ]
 }
-module.exports = configuration

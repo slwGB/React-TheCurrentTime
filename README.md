@@ -80,6 +80,8 @@ TheCurrentTime
   |       |-- rimraf => 编译前清空dist目录。package.json配置：
   |       |             "scripts": {"build": "rimraf dist && ..."}
   |       |
+  |       |-- OpenBrowserPlugin => webpack编译后自动打开浏览器
+  |       |
   |       |-- webpack
   |       |
   |       |-- webpack-dev-middleware
