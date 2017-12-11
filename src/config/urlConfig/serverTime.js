@@ -5,7 +5,7 @@ export default {
             production: ''
         },
         path: {
-            getServerTime: '' // 首页应用总数
+            getServerTime: ''
         }
     }
 }

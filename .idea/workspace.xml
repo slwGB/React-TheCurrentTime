@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b75243fe-dd74-4057-a513-2d8d2f598a5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/urlConfig/serverTime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service/requestConfig.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/actions/localTime.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/LocalTime.js" afterPath="$PROJECT_DIR$/src/components/localTime.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/reducers/localTime.js" afterPath="$PROJECT_DIR$/src/reducers/time.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintrc.js" afterPath="$PROJECT_DIR$/.eslintrc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/actionType.js" afterPath="$PROJECT_DIR$/src/config/actionType.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/index.js" afterPath="$PROJECT_DIR$/src/config/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Index.js" afterPath="$PROJECT_DIR$/src/containers/Index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/urlConfig/serverTime.js" afterPath="$PROJECT_DIR$/src/config/urlConfig/serverTime.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,8 +43,8 @@
       <file leaf-file-name="serverTime.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/config/urlConfig/serverTime.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="147">
+              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -141,9 +126,9 @@
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/actions/time.js" />
         <option value="$PROJECT_DIR$/src/containers/FirstScreen.js" />
-        <option value="$PROJECT_DIR$/src/config/urlConfig/serverTime.js" />
         <option value="$PROJECT_DIR$/src/reducers/time.js" />
         <option value="$PROJECT_DIR$/src/containers/Index.js" />
+        <option value="$PROJECT_DIR$/src/config/urlConfig/serverTime.js" />
       </list>
     </option>
   </component>
@@ -414,12 +399,12 @@
       <workItem from="1512521290794" duration="14382000" />
       <workItem from="1512608561347" duration="20656000" />
       <workItem from="1512694290499" duration="27442000" />
-      <workItem from="1512954472966" duration="18797000" />
+      <workItem from="1512954472966" duration="18869000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250885000" />
+    <option name="totallyTimeSpent" value="250957000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -837,8 +822,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config/urlConfig/serverTime.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="147">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding />
         </state>
       </provider>
