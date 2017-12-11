@@ -9,9 +9,7 @@ class FirstScreen extends Component {
 
     render () {
         return (
-            <div className='firstScreen'>
-                我是首屏空白页
-            </div>
+            <div className='firstScreen'></div>
         )
     }
 }

@@ -155,17 +155,10 @@ export default class LocalTime extends Component {
         this.WindowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
         this.WindowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
         this.Radius = 4 // 球半径
-        this.balls = [] // 存储彩球
-        this.u = 0.65 // 碰撞能量损耗系数
-        this.timeCurrentNums = []
-        this.colors = ['#33B5E5', '#0099CC', '#AA66CC', '#9933CC', '#99CC00', '#669900', '#FFBB33', '#FF8800', '#FF4444', '#CC0000']// 彩球
         this.drawDataTime = this.drawDataTime.bind(this)
         this.drawSingleDateDigit = this.drawSingleDateDigit.bind(this)
         this.drawSingleTimeDigit = this.drawSingleTimeDigit.bind(this)
         this.intervalDraw = this.intervalDraw.bind(this)
-        this.addBalls = this.addBalls.bind(this)
-        this.renderBalls = this.renderBalls.bind(this)
-        this.updateBalls = this.updateBalls.bind(this)
     }
 
     drawSingleDateDigit (dateOffsetX, dateOffsetY, num, context) {// 绘制单个日期字符
@@ -258,73 +251,7 @@ export default class LocalTime extends Component {
             timeNums[x].timeOffsetX = timeOffsetX
             timeOffsetX = this.drawSingleTimeDigit(timeOffsetX, timeOffsetY, timeNums[x].num, timeCanvasContext) + 10
         }
-
-        // if (this.timeCurrentNums.length == 0) {
-        //     this.timeCurrentNums = timeNums
-        // } else {
-        //     for (let index = 0; index < this.timeCurrentNums.length; index++) {
-        //         if (this.timeCurrentNums[index].num != timeNums[index].num) {
-        //             // 不一样时，添加彩色小球
-        //             this.addBalls(timeNums[index])
-        //             this.timeCurrentNums[index].num = timeNums[index].num
-        //         }
-        //     }
-        // }
-        // this.renderBalls(timeCanvasContext)
-        // this.updateBalls()
         // +++++时间 END+++++
-    }
-
-    addBalls (item) {// 添加彩球
-        let num = item.num
-        let numMatrix = this.digit[num]
-        for (let y = 0; y < numMatrix.length; y++) {
-            for (let x = 0; x < numMatrix[y].length; x++) {
-                if (numMatrix[y][x] == 1) {
-                    let ball = {
-                        offsetX: item.timeOffsetX + this.Radius + this.Radius * 2 * x,
-                        offsetY: 30 + this.Radius + this.Radius * 2 * y,
-                        color: this.colors[Math.floor(Math.random() * this.colors.length)],
-                        g: 1.5 + Math.random(),
-                        vx: Math.pow(-1, Math.ceil(Math.random() * 10)) * 4 + Math.random(),
-                        vy: -5
-                    }
-                    this.balls.push(ball)
-                }
-            }
-        }
-    }
-
-    renderBalls (context) {
-        for (let index = 0; index < this.balls.length; index++) {
-            context.beginPath()
-            context.fillStyle = this.balls[index].color
-            context.arc(this.balls[index].offsetX, this.balls[index].offsetY, this.Radius, 0, 2 * Math.PI)
-            context.fill()
-            context.closePath()
-        }
-    }
-
-    updateBalls () {
-        let i = 0
-        for (let index = 0; index < this.balls.length; index++) {
-            let ball = this.balls[index]
-            ball.offsetX += ball.vx
-            ball.offsetY += ball.vy
-            ball.vy += ball.g
-            if (ball.offsetY > ( this.WindowHeight * 2 / 3 - this.Radius)) {
-                ball.offsetY = this.WindowHeight * 2 / 3 - this.Radius
-                ball.vy = -ball.vy * this.u
-            }
-            if (ball.offsetX > this.Radius && ball.offsetX < (this.WindowWidth - this.Radius)) {
-                this.balls[i] = this.balls[index]
-                i++
-            }
-        }
-        // 去除出边界的球
-        for (; i < this.balls.length; i++) {
-            this.balls.pop()
-        }
     }
 
     intervalDraw () {
@@ -333,7 +260,7 @@ export default class LocalTime extends Component {
         let dateCanvasContext = dateCanvas.getContext('2d')
         dateCanvas.width = this.WindowWidth
         dateCanvas.height = this.WindowHeight / 3
-        dateCanvasContext.fillStyle = 'blue'
+        dateCanvasContext.fillStyle = '#415031'
         // +++++日期 END+++++
 
         // +++++时间 START+++++
@@ -341,7 +268,7 @@ export default class LocalTime extends Component {
         let timeCanvasContext = timeCanvas.getContext('2d')
         timeCanvas.width = this.WindowWidth
         timeCanvas.height = this.WindowHeight * 2 / 3
-        timeCanvasContext.fillStyle = 'blue'
+        timeCanvasContext.fillStyle = '#415031'
         // +++++时间 END+++++
 
         this.drawDataTime(dateCanvasContext, timeCanvasContext)
@@ -366,10 +293,10 @@ export default class LocalTime extends Component {
         return (
             <div className='localTimeBox'>
                 <div className='localTimeDate'>
-                    <canvas id='dateCanvas' style={{backgroundColor: '#2c968b'}}></canvas>
+                    <canvas id='dateCanvas' style={{backgroundColor: 'inherit'}}></canvas>
                 </div>
                 <div className='localTimeTime'>
-                    <canvas id='timeCanvas' style={{backgroundColor: '#2c968b'}}></canvas>
+                    <canvas id='timeCanvas' style={{backgroundColor: 'inherit'}}></canvas>
                 </div>
             </div>
         )
