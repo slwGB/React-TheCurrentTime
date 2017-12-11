@@ -82,6 +82,16 @@ TheCurrentTime
   |       |
   |       |-- OpenBrowserPlugin => webpack编译后自动打开浏览器
   |       |
+  |       |-- axios => 一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中
+  |       |
+  |       |-- babel-eslint => 一个Babel parser的包装器，这个包装器使得Babel parser可以和ESLint协调工作
+  |       |                   .eslintrc.js中配置："parser": "babel-eslint",
+  |       |                                      "parserOptions": {
+  |       |                                          "sourceType": "module",
+  |       |                                          "allowImportExportEverywhere": false,
+  |       |                                          "codeFrame": false
+  |       |                                      }
+  |       |
   |       |-- webpack
   |       |
   |       |-- webpack-dev-middleware
@@ -109,6 +119,12 @@ TheCurrentTime
   |    |-- components => 展示型组件目录
   |    |
   |    |-- containers => 容器型组件目录
+  |    |
+  |    |-- config => 配置actionType、接口
+  |    |
+  |    |-- library => 插件库
+  |    |
+  |    |-- service => 服务配置
   |    |
   |    |-- static => 静态文件目录
   |    |

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {store} from '../main'
 import {bindActionCreators} from 'redux'
-import {getLocalTime} from '../actions/localTime'
+import {getLocalTime,getServerTime} from '../actions/time'
 import LocalTime from '../components/LocalTime'
 import '../static/css/Index.css'
 

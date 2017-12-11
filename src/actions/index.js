@@ -1,7 +1,3 @@
-/*
- * 当前页面可以进行socket连接等方法
+/**
+ * socket is connect in this page
  */
-
-import * as Config from '../config/index'
-
-console.log('This is actions index.js')
